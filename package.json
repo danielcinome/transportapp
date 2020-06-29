@@ -4,7 +4,7 @@
   "description": "service for user know the time of your public transport",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app/app.js",
     "test": "test.js"
   },
   "repository": {
