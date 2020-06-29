@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 
 // Use for server the view
-app.use(express.static((__dirname + '../view'));
+app.use(express.static(__dirname + '../view');
 
 // declare the route for API
 const route = require('./routes');
