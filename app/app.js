@@ -19,6 +19,6 @@ app.use(express.static('../view'));
 const route = require('./routes');
 app.use('/api', route)
 
-app.listen(8000, function() {
+app.listen(process.env.PORT || 8000, function() {
     console.log("Server up and listening");
   });
