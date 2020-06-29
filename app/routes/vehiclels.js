@@ -28,7 +28,7 @@ function xmltoJson(body) {
  * @param {req} represents the (request)
  * @param {res} represents the (response)
  */
-router.get('/hola/:id', function (req, res) {
+router.get('/:id', function (req, res) {
 
   const vehicleId = req.params.id;
   let listPredict = [];
