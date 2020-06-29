@@ -1,5 +1,6 @@
 // Express is a web application infrastructure Node.js
 const express = require('express');
+const path = require('path');
 
 let app = express();
 
@@ -13,12 +14,12 @@ app.use((req, res, next) => {
 });
 
 // Use for server the view
-app.use(express.static('../view'));
+app.use(express.static(path.join(__dirname, '../view')));
 
-// declare the route for API 
+// declare the route for API
 const route = require('./routes');
 app.use('/api', route)
 
-app.listen(8000, function() {
+app.listen(process.env.PORT || 8000, function() {
     console.log("Server up and listening");
   });
