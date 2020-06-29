@@ -21,6 +21,7 @@
     "@popperjs/core": "^2.4.2",
     "express": "^4.17.1",
     "mapbox-gl": "^1.11.0",
+    "path": "^0.12.7",
     "request": "^2.88.2",
     "xml-js": "^1.6.11",
     "xml2js": "^0.4.23"
