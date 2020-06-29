@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   // Use for request to API abot all routes
   async function allRoutes(){
-    const url = 'http://127.0.0.1:5001/api/routes'
+    const url = 'https://transportappchiper.herokuapp.com/api/routes'
     const all = await $.get(url, (data) => {
       return data;
     })
@@ -19,7 +19,7 @@ $(document).ready(function () {
   // asigner parameter for save in data in geojson
   async function getData() {
 
-    const resRoutes = await $.get('http://127.0.0.1:5001/api/routes/config', (data) => {
+    const resRoutes = await $.get('https://transportappchiper.herokuapp.com/api/routes/config', (data) => {
         return data;
     });
     for (let route of resRoutes) {
@@ -74,7 +74,7 @@ $(document).ready(function () {
       
 
     locations.eachLayer(async function(locale) {
-      const url = 'http://127.0.0.1:5001/api/routes/' + locale.feature.properties.stopid[0];
+      const url = 'https://transportappchiper.herokuapp.com/api/routes/' + locale.feature.properties.stopid[0];
       let predition = await $.get(url, (data) => {
         return data;
       });
