@@ -38,4 +38,4 @@ Once ready most of the API, I started with the FrontEnd looking for how I could 
 
 ## Author
 
-- Daniel Angarita Chinome [@danielchinome](https://twitter.com/danielchinome)
+- Daniel Chinome - [Github](https://github.com/danielcinome) / [Twitter](https://twitter.com/DanielChinome)
