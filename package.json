@@ -19,7 +19,7 @@
   "homepage": "https://github.com/danielcinome/transportapp#readme",
   "dependencies": {
     "@popperjs/core": "^2.4.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mapbox-gl": "^1.11.0",
     "path": "^0.12.7",
     "request": "^2.88.2",
